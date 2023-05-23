@@ -1,0 +1,61 @@
+body {
+    background-color: skyblue;
+    background-image: url("C:\Users\Asus\Desktop\uni\sem 2\tehnici web\proiect final\norisori.png");
+}
+.menuAttribute{
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    font-family: 'Book Antiqua';
+    border: none;
+    float:left;
+}
+.menu{
+    color:transparent;
+    float: none;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu li:hover{
+    background-color: rgba(40, 165, 227, 0.2); 
+}
+
+/* creem meniul dropdown */
+.menudropdown {
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    font-family: 'Book Antiqua';
+    border: none;
+    float:right;
+}
+.dropdown {
+    color: white;
+    padding: auto;
+    font-size: 20px;
+    font-family: 'Book Antiqua';
+    border: none;
+    display:none;
+    background: transparent;
+}
+.menudropdown:hover .dropdown{
+    display:block;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.fixed-box {
+    position: fixed;
+    font-size: 65px;
+    padding: 16px;
+    left: 8px;
+    top: 80px;
+    background:rgba(40, 165, 227, 0.2);
+    border: none;
+
+  }
+
