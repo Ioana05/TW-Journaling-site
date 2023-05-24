@@ -89,3 +89,23 @@ header{
     font-size:25px;
     padding-bottom: 15px;
 }
+
+.meditation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.meditation img{
+    width: 75%;
+    height: auto;
+}
+
+.meditation-time{
+    margin-top: 32px;
+    font-size: 64px;
+    color:white;
+}
+

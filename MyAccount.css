@@ -2,6 +2,7 @@ body{
     background-color: rgb(167, 199, 231);
     margin: 0;
 }
+
 .meniuWrapper{
     display:flex;
     justify-content: space-between;
@@ -123,3 +124,4 @@ a:active { text-decoration: none; }
         padding-right: 32px;
     }
 }
+

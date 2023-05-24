@@ -16,8 +16,6 @@ function GenerateBackgroundIndex(len){
     return Math.floor(Math.random() * 3)
 }
 
-// homeBackground.style.backgroundImage = 'url("../IMAGES/FINAL2.jpg")';
-
 setInterval(() => {
     // generez un nou index din lista de background-uri
     const newIndex = GenerateBackgroundIndex(backgrounds.length);
