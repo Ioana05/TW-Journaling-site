@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(167, 199, 231);
+    margin: 0;
+}
+.meniuWrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.menuAttribute{
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    font-family: 'Book Antiqua';
+    border: none;
+    float:left;
+}
+.meniu{
+    color:transparent;
+    float: none;   
+}
+.meniu li:hover{
+    background-color: rgba(40, 165, 227, 0.2); 
+}
+
+/* creem meniul dropdown */
+.menudropdown {
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    font-family: 'Book Antiqua';
+    border: none;
+}
+.dropdown {
+    color: white;
+    padding: auto;
+    font-size: 20px;
+    font-family: 'Book Antiqua';
+    border: none;
+    display:none;
+    background: transparent;
+}
+.menudropdown:hover .dropdown{
+    display:block;
+}
+/* urmatoarele randuri le am adaugat pentru a scapa de sublinierea linkurilor*/
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.WrapTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    max-width: 50vW;
+    flex: 1;
+    color: white;
+    font-size: 25px;
+    font-family: 'Book Antiqua';
+    align-items: center;;
+}
+
+.WrapPage{
+    padding-top: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+.Page{
+    padding: 64px 40px;
+    background-color: cornflowerblue;
+    min-height: 80vh;
+    position: relative;
+}
+
+.PageDecoration{
+    height: 70px;
+    width: 15px;
+    position:  absolute;   
+    background-color: white;
+    top: 0px;
+}
+.Decoration1{
+    left: 70px;
+}
+.Decoration2{
+    left: 40px;
+}
+.Questions {
+    display: flex;
+    flex-direction: column;   
+}
+.emojis{
+    display: flex;
+}
+.e{
+    padding: 10px;
+}

@@ -1,6 +1,41 @@
 body {
-    background-color: skyblue;
+    margin:0;
+    background-color: rgb(167, 199, 231);
     background-image: url("C:\Users\Asus\Desktop\uni\sem 2\tehnici web\proiect final\norisori.png");
+}
+.wrapper {
+    background-image: url("IMAGES/FINAL.png");
+
+    /* Set a specific height */
+    height: 100vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.campii{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index:-1;
+    transform: translateZ(-10px) scale(2); /*imaginea va parea mult mai indepartata*/
+}
+.meniuWrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
 }
 .menuAttribute{
     color: white;
@@ -10,15 +45,11 @@ body {
     border: none;
     float:left;
 }
-.menu{
+.meniu{
     color:transparent;
-    float: none;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    float: none;   
 }
-.menu li:hover{
+.meniu li:hover{
     background-color: rgba(40, 165, 227, 0.2); 
 }
 
@@ -29,7 +60,6 @@ body {
     font-size: 20px;
     font-family: 'Book Antiqua';
     border: none;
-    float:right;
 }
 .dropdown {
     color: white;
@@ -43,19 +73,43 @@ body {
 .menudropdown:hover .dropdown{
     display:block;
 }
+/* urmatoarele randuri le am adaugat pentru a scapa de sublinierea linkurilor*/
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
+.ParentFixedBox{
+    display:flex;
+    padding: 32px;
+}
+
+.ParentFixedBox div{
+    flex: 1;
+}
+
 .fixed-box {
-    position: fixed;
+    text-align: center;
     font-size: 65px;
     padding: 16px;
-    left: 8px;
-    top: 80px;
-    background:rgba(40, 165, 227, 0.2);
+    background:rgba(194, 225, 240, 0.4);
     border: none;
+}
 
-  }
+.wrappText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.BottomParagraph{
+    max-width: 50vW;
+    flex: 1;
+    color: white;
+    font-size: 15px;
+    font-family: 'Book Antiqua';
+    padding:40px;
+    }
+
 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="MyAccount.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">   
+        <ul class="meniuWrapper" type="none">
+            <li> logo </li>
+            <nav class="meniu">
+                <li class="menuAttribute">
+                    <span> <a href="proiect.html" target="_self"> Home </a> </span>
+                </li>
+                <li class="menuAttribute">
+                    <span> <a href="GoodNews.html" target="_self"> Good news </a> </span>
+                </li>
+                <li class="menuAttribute">
+                    <span> <a href="SoulActivities.html" target="_self"> Activities for soul </a> </span>
+                </li>
+            </nav>
+                <li class="menudropdown">
+                    <img class="profile" src="C:\Users\Asus\Desktop\uni\sem 2\tehnici web\proiect final\V2profile.png"  width="100"/>
+                    <ul class="dropdown" type="none">
+                        <li> Profilul meu <a href="MyAccount.html" target="_self"> </a> </li>
+                        <li> Log in <a href="LogIn.html" target="_self"> </a> </li>
+                        <li> Log out <a href="logout.html" target="_self"> </a> </li>
+                    </ul>
+                </li>
+        </ul>
+    </div>
+    <div class="WrapPage">
+        <div class="Page">
+            <div class="PageDecoration Decoration1"></div>
+            <div class="PageDecoration Decoration2"></div>
+            <div class="WrapTitle">
+                <div class="title"> Welecome to your journal, name! </div>
+            </div>
+                <form class="Questions">
+                    <p> How are you feeling today? </p>
+                    <div class="emojis">
+                        <div class="e"><i class="em em-disappointed" aria-role="presentation" aria-label="DISAPPOINTED FACE"></i> </div>
+                        <div class="e"> <i class="em em-face_with_thermometer" aria-role="presentation" aria-label="FACE WITH THERMOMETER"></i></div>
+                        <div class="e"> <i class="em em-expressionless" aria-role="presentation" aria-label="EXPRESSIONLESS FACE"></i></div>
+                        <div class="e"> <i class="em em-slightly_smiling_face" aria-role="presentation" aria-label="SLIGHTLY SMILING FACE"></i></div>
+                        <div class="e"> <i class="em em-smile" aria-role="presentation" aria-label="SMILING FACE WITH OPEN MOUTH AND SMILING EYES"></i></div>
+                        <div class="e"> <i class="em em-smiling_face_with_3_hearts" aria-role="presentation" aria-label="SMILING FACE WITH SMILING EYES AND THREE HEARTS"></i></div>
+                    </div>
+                    <p> What did you do today? </p>
+                    <textarea placeholder="Write about your day" rows="6" cols="30" name="textDay"> </textarea>
+                    <p> What did you do for your soul? </p>
+                    <textarea placeholder="Write about activities for your soul" rows="6" cols="30" name="textSoul"> </textarea>
+                    <p> What did you do for your body? </p>
+                    <ul type="none"> 
+                        <div>
+                            <li> How much water did you drink? </li>
+                            <div>
+                                <input type="radio" name="water" id="w1"/>
+                                <label for="w1"> One glass </label>
+                                <input type="radio" name="water" id="w2"/>
+                                <label for="w2">one liter</label>
+                                <input type="radio" name="water" id="w3"/>
+                                <label for="w3">two liters </label>
+                              </div>
+                        </div>
+                        <li> Did you move your body? </li>
+                        <div>
+                                <input type="radio" name="sport" id="s1"/>
+                                <label for="s1"> Yes </label>
+                                <input type="radio" name="sport" id="s2"/>
+                                <label for="s2">No</label>       
+                        </div>
+                        <li> Did you eat your veggies? </li>
+                        <div>
+                            <input type="radio" name="veggie" id="v1"/>
+                            <label for="v1"> Yes </label>
+                            <input type="radio" name="veggie" id="v2"/>
+                            <label for="v2"> Yes </label> 
+                        </div>
+                    <div> <button> Start meditating </button> </div>        
+                    </ul>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>
