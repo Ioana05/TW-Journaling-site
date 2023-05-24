@@ -23,6 +23,7 @@ body{
     background-color: rgba(40, 165, 227, 0.2); 
 }
 
+
 /* creem meniul dropdown */
 .menudropdown {
     color: white;
@@ -60,7 +61,7 @@ a:active { text-decoration: none; }
     color: white;
     font-size: 25px;
     font-family: 'Book Antiqua';
-    align-items: center;;
+    text-align: center;
 }
 
 .WrapPage{
@@ -97,4 +98,28 @@ a:active { text-decoration: none; }
 }
 .e{
     padding: 10px;
+    margin-right: 5px;
+}
+
+.yourday-buton{
+    width:50px;
+    border:none;
+    border-radius: 10px;
+    color:white;
+    background: skyblue;
+    padding: 10px;
+}
+
+/* modificam afisarea pentru ecrane cu latimea mai mica de 900 px */
+@media only screen and (max-width: 900px){
+    .menuAttribute{
+        padding: 8px;
+        font-size: 16px;
+    }
+    
+    .WrapPage{
+        padding-top: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }

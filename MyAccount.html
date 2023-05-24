@@ -43,12 +43,23 @@
                 <form class="Questions">
                     <p> How are you feeling today? </p>
                     <div class="emojis">
-                        <div class="e"><i class="em em-disappointed" aria-role="presentation" aria-label="DISAPPOINTED FACE"></i> </div>
-                        <div class="e"> <i class="em em-face_with_thermometer" aria-role="presentation" aria-label="FACE WITH THERMOMETER"></i></div>
-                        <div class="e"> <i class="em em-expressionless" aria-role="presentation" aria-label="EXPRESSIONLESS FACE"></i></div>
-                        <div class="e"> <i class="em em-slightly_smiling_face" aria-role="presentation" aria-label="SLIGHTLY SMILING FACE"></i></div>
-                        <div class="e"> <i class="em em-smile" aria-role="presentation" aria-label="SMILING FACE WITH OPEN MOUTH AND SMILING EYES"></i></div>
-                        <div class="e"> <i class="em em-smiling_face_with_3_hearts" aria-role="presentation" aria-label="SMILING FACE WITH SMILING EYES AND THREE HEARTS"></i></div>
+                        <input type="radio" value="sad" name="emoji" id="e1"/>
+                        <label for="e1" class="e"><i class="em em-disappointed" aria-role="presentation" aria-label="DISAPPOINTED FACE"></i> </label>
+
+                        <input type="radio" value="sick" name="emoji" id="e2"/>
+                        <label for="e2" class="e"> <i class="em em-face_with_thermometer" aria-role="presentation" aria-label="FACE WITH THERMOMETER"></i></label>
+                        
+                        <input type="radio" value="apathetic"  name="emoji" id="e3"/>
+                        <label class="e"> <i class="em em-expressionless" aria-role="presentation" aria-label="EXPRESSIONLESS FACE"></i></label>
+                        
+                        <input type="radio" value="happy" name="emoji" id="e4"/>
+                        <label class="e"> <i class="em em-slightly_smiling_face" aria-role="presentation" aria-label="SLIGHTLY SMILING FACE"></i></label>
+                        
+                        <input type="radio" value="very happy" name="emoji" id="e5"/>
+                        <label class="e"> <i class="em em-smile" aria-role="presentation" aria-label="SMILING FACE WITH OPEN MOUTH AND SMILING EYES"></i></label>
+                        
+                        <input type="radio" value="lovely" name="emoji" id="e6"/>
+                        <label class="e"> <i class="em em-smiling_face_with_3_hearts" aria-role="presentation" aria-label="SMILING FACE WITH SMILING EYES AND THREE HEARTS"></i></label>
                     </div>
                     <p> What did you do today? </p>
                     <textarea placeholder="Write about your day" rows="6" cols="30" name="textDay"> </textarea>
@@ -59,32 +70,39 @@
                         <div>
                             <li> How much water did you drink? </li>
                             <div>
-                                <input type="radio" name="water" id="w1"/>
+                                <input type="radio" value="One glass" name="water" id="w1"/>
                                 <label for="w1"> One glass </label>
-                                <input type="radio" name="water" id="w2"/>
-                                <label for="w2">one liter</label>
-                                <input type="radio" name="water" id="w3"/>
-                                <label for="w3">two liters </label>
+                                <input type="radio" value="One liter" name="water" id="w2"/>
+                                <label for="w2">One liter</label>
+                                <input type="radio" value="Two liters" name="water" id="w3"/>
+                                <label for="w3">Two liters </label>
                               </div>
                         </div>
                         <li> Did you move your body? </li>
                         <div>
-                                <input type="radio" name="sport" id="s1"/>
+                                <input type="radio" value="Yes" name="sport" id="s1"/>
                                 <label for="s1"> Yes </label>
-                                <input type="radio" name="sport" id="s2"/>
+                                <input type="radio" value="No" name="sport" id="s2"/>
                                 <label for="s2">No</label>       
                         </div>
                         <li> Did you eat your veggies? </li>
                         <div>
-                            <input type="radio" name="veggie" id="v1"/>
+                            <input type="radio" value="Yes" name="veggie" id="v1"/>
                             <label for="v1"> Yes </label>
-                            <input type="radio" name="veggie" id="v2"/>
-                            <label for="v2"> Yes </label> 
-                        </div>
-                    <div> <button> Start meditating </button> </div>        
+                            <input type="radio" value="No" name="veggie" id="v2"/>
+                            <label for="v2"> No </label> 
+                        </div>      
                     </ul>
-                </ul>
-            </div>
+                    <button class="yourday-buton">Send</button>
+                </form>
+            <div>
+                <br> 
+                <button> Start meditating </button> 
+            </div>  
+            <div class="notes"></div>
+        </div>
     </div>
+
+    <script src="/javascript/profil.js"></script>
 </body>
 </html>

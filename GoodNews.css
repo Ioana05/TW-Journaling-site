@@ -1,0 +1,128 @@
+body{
+    background-color: skyblue;
+    margin: 0;
+}
+.meniuWrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.menuAttribute{
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    font-family: 'Book Antiqua';
+    border: none;
+    float:left;
+}
+.meniu{
+    color:transparent;
+    float: none;   
+}
+.meniu li:hover{
+    background-color: rgba(40, 165, 227, 0.2); 
+}
+
+/* creem meniul dropdown */
+.menudropdown {
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    font-family: 'Book Antiqua';
+    border: none;
+}
+.dropdown {
+    color: white;
+    padding: auto;
+    font-size: 20px;
+    font-family: 'Book Antiqua';
+    border: none;
+    display:none;
+    background: transparent;
+}
+.menudropdown:hover .dropdown{
+    display:block;
+}
+/* urmatoarele randuri le am adaugat pentru a scapa de sublinierea linkurilor*/
+a:link { color:white; text-decoration: none; }
+a:visited { color:white; text-decoration: none; }
+a:hover { color:white; text-decoration: none; }
+a:active { color:white; text-decoration: none; }
+
+.WrapperArticles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+.Articles{
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(5, 20vh);
+    /* spatiu dintre articole*/
+    grid-gap: 32px;
+    grid-template-areas: 
+    "bigarticle bigarticle bigarticle sidearticle"
+    "bigarticle bigarticle bigarticle sidearticle"
+    "bigarticle bigarticle bigarticle sidearticle"
+    "bottomarticle1 bottomarticle1 bottomarticle2 bottomarticle2"
+    "bottomarticle1 bottomarticle1 bottomarticle2 bottomarticle2";
+}
+
+
+.Article{
+    /* rotunjirea marginilor */
+    border-radius: 20px;
+    font-family: 'Lora', serif;
+    color: white;
+    display:flex;
+    align-items: flex-end;
+    padding: 32px;
+}
+
+.Article1{
+    grid-area: bigarticle;
+    background-image: linear-gradient(to bottom, transparent 60%, black), url(./IMAGES/cutu.jpg);
+    background-size: cover;
+    font-size: 48px;
+}
+
+.Article2{
+    grid-area: sidearticle;
+    background-image: linear-gradient(to bottom, transparent 60%, black), url(./IMAGES/bunici.jpg);
+    background-size: cover;
+    font-size: 24px;
+}
+
+.Article3{
+    grid-area: bottomarticle1;
+    background-image: linear-gradient(to bottom, transparent 60%, black), url(./IMAGES/bees.jpg);
+    background-size: cover;
+    font-size: 16px;
+}
+
+.Article4{
+    grid-area: bottomarticle2;
+    background-image: linear-gradient(to bottom, transparent 60%, black), url(./IMAGES/bunica93.jpg);
+    background-size: cover;
+    font-size: 16px;
+}
+
+/* modificam afisarea pentru ecrane cu latimea mai mica de 900 px */
+@media only screen and (max-width: 900px){
+    .menuAttribute{
+        padding: 8px;
+    }
+    .Articles{
+        display: flex;
+        flex-direction: column;
+    }
+    .Article{ 
+        padding: 20px;
+    }
+    .Article1, .Article2, .Article3, .Article4{ 
+        height: 30vw;
+        font-size: 24px;
+    }
+}
