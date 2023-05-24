@@ -10,10 +10,10 @@ window.onload = () => {
 }
 
 const homeBackground = document.getElementsByClassName("wrapper")[0];
-const backgrounds = ["../IMAGES/FINAL.png","../IMAGES/FINAL2.jpg","../IMAGES/FINAL3.jpg"];
+const backgrounds = ["../IMAGES/f.jpg","../IMAGES/floare.jpg","../IMAGES/pat.jpg","../IMAGES/bicicleta.jpg", "../IMAGES/cer.jpg" ];
 
 function GenerateBackgroundIndex(len){
-    return Math.floor(Math.random() * 3)
+    return Math.floor(Math.random()*len);
 }
 
 setInterval(() => {

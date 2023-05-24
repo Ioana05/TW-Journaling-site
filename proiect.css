@@ -1,10 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    margin:0;
-    background-color: rgb(167, 199, 231);
+    background-color: rgb(210, 180, 140);
     background-image: url("C:\Users\Asus\Desktop\uni\sem 2\tehnici web\proiect final\norisori.png");
 }
 .wrapper {
-    background-image: url("IMAGES/FINAL.png");
+    background-image: url("IMAGES/FINAL1.jpg");
 
     /* Set a specific height */
     height: 100vh; 
@@ -50,7 +54,7 @@ header{
     float: none;   
 }
 .meniu li:hover{
-    background-color: rgba(40, 165, 227, 0.2); 
+    background-color: rgba(280, 180, 140, 0.2); 
 }
 
 /* creem meniul dropdown */
@@ -73,6 +77,10 @@ header{
 .menudropdown:hover .dropdown{
     display:block;
 }
+
+.profile{
+    width: 50px;
+}
 /* urmatoarele randuri le am adaugat pentru a scapa de sublinierea linkurilor*/
 a:link { color:white; text-decoration: none; }
 a:visited { color:white; text-decoration: none; }
@@ -92,7 +100,7 @@ a:active { color:white; text-decoration: none; }
     text-align: center;
     font-size: 65px;
     padding: 16px;
-    background:rgba(194, 225, 240, 0.4);
+    background:rgba(251, 251, 251, 0.4);
     border: none;
 }
 
