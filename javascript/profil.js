@@ -3,8 +3,8 @@ const yourday_button = document.getElementsByClassName("yourday-buton")[0];
 let created_notes = [];
 
 function FilterTextarea(sentence){
-    const notAllowedWords = "/\b([Nn]igger|[Nn]igga|[Cc]hink|[Kk]ike)\b/";
-    return sentence.match(notAllowedWords)
+    const notAllowedWords = new RegExp("([Nn]igger|[Nn]igga|[Cc]hink|[Kk]ike)");
+    return notAllowedWords.test(sentence)
 }
 
 window.onload = () => {
@@ -111,7 +111,7 @@ yourday_button.addEventListener("click", (event) => {
             veggie: veggie,
         }
         created_notes.push(newNoteJSON);
-        // adaugam in local local storage
+        // adaugam in local storage
         localStorage.setItem("created_notes_storage", JSON.stringify(created_notes));
     } else{
         alert("You are not allowed to use such words!");
